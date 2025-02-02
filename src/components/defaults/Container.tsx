@@ -5,6 +5,8 @@ interface IContainer {
 
 export const Container = ({ children, classes = "" }: IContainer) => {
   return (
-    <div className="container mx-auto max-w-[1200px] px-5">{children}</div>
+    <div className={`container mx-auto max-w-[1200px] px-5 ${classes}`}>
+      {children}
+    </div>
   );
 };
