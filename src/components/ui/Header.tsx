@@ -6,7 +6,18 @@ import { Container } from "../defaults/Container";
 // assets
 import logo from "../../assets/logo.svg";
 
-export const Header = ({ cartCount }: { cartCount: number }) => {
+// interface
+interface IHeader {
+  cartCount: number;
+  isCartModalOpen: boolean;
+  setIsCartModalOpen: Function;
+}
+
+export const Header = ({
+  cartCount,
+  isCartModalOpen,
+  setIsCartModalOpen,
+}: IHeader) => {
   const navLinks = ["home", "about", "services", "pages", "contact"];
 
   return (
@@ -29,7 +40,16 @@ export const Header = ({ cartCount }: { cartCount: number }) => {
             })}
           </ul>
           <div className="flex ml-auto gap-6 items-center">
-            <h2 className="text-lg">Cart ({cartCount})</h2>
+            <h2
+              className="text-lg cursor-pointer"
+              onClick={() => {
+                !isCartModalOpen
+                  ? setIsCartModalOpen(true)
+                  : setIsCartModalOpen(false);
+              }}
+            >
+              Cart ({cartCount})
+            </h2>
             <button
               type="button"
               className="bg-x-blue text-white text-lg font-medium px-6 py-5 rounded-[14px] max-sm:hidden"
