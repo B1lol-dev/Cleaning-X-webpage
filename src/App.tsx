@@ -1,9 +1,13 @@
+// components
+import { useState } from "react";
+import { Header } from "./components/ui/Header";
+
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+
   return (
     <>
-      <h1 className="text-sky-700 text-5xl font-bold text-center">
-        Cleaning X
-      </h1>
+      <Header cartCount={cartCount} />
     </>
   );
 }

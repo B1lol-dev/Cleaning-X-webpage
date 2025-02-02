@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}
+
+@theme {
+  --color-x-black: #211f54;
+  --color-x-blue: #0075ff;
+}
