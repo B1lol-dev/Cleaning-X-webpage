@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Header } from "./components/ui/Header";
 
 import { CartModal } from "./components/modals/CartModal";
-import { Container } from "./components/defaults/Container";
+// import { Container } from "./components/defaults/Container";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
