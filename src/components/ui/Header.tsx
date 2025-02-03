@@ -52,7 +52,7 @@ export const Header = ({
             </h2>
             <button
               type="button"
-              className="bg-x-blue text-white text-lg font-medium px-6 py-5 rounded-[14px] max-sm:hidden"
+              className="bg-x-blue text-white text-lg font-medium px-6 py-5 rounded-[14px] max-sm:hidden transition hover:-translate-y-0.5 active:scale-95"
             >
               Get a free quote
             </button>
