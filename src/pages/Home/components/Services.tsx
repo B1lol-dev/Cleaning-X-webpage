@@ -63,7 +63,7 @@ export const Services = () => {
             </button>
             <button
               type="button"
-              className="text-[1.25rem] text-x-black border-x-gray border-1 bg-x-white px-9 py-6 rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"
+              className="text-[1.25rem] text-x-black border-[#EFF0F6] shadow-[0px_4px_10px_0px_#14142B0A] border-1 bg-x-white px-9 py-6 rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"
             >
               Explore services
             </button>

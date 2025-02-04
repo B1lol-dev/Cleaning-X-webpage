@@ -7,6 +7,7 @@ import { CartModal } from "../../components/modals/CartModal";
 import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
 import { Info } from "./components/Info";
+import { ProServices } from "./components/ProServices";
 // import { Container } from "./components/defaults/Container";
 
 export const Home = () => {
@@ -27,6 +28,7 @@ export const Home = () => {
       <Hero />
       <Services />
       <Info />
+      <ProServices />
       {isCartModalOpen && (
         <CartModal
           setCartCount={setCartCount}
