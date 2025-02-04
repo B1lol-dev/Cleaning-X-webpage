@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 // components
 import { Container } from "../../../components/defaults/Container";
 
@@ -47,6 +49,7 @@ export const Services = () => {
                   img={service.img}
                   title={service.title}
                   desc={service.desc}
+                  key={uuidv4()}
                 />
               );
             })}
