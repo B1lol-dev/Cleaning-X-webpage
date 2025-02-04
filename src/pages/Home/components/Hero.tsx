@@ -1,9 +1,9 @@
 // components
-import { Container } from "../../components/defaults/Container";
+import { Container } from "../../../components/defaults/Container";
 
 // assets
-import hero_img from "../../assets/Home/hero/hero_img.png";
-import icon_call from "../../assets/icons/icon_call.svg";
+import hero_img from "../assets/hero/hero_img.png";
+import icon_call from "../../../assets/icons/icon_call.svg";
 
 export const Hero = () => {
   return (

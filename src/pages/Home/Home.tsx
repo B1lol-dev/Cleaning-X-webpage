@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { Header } from "../../components/ui/Header";
 
 import { CartModal } from "../../components/modals/CartModal";
-import { Hero } from "./Hero";
+import { Hero } from "./components/Hero";
+import { Services } from "./components/Services";
 // import { Container } from "./components/defaults/Container";
 
 export const Home = () => {
@@ -23,6 +24,7 @@ export const Home = () => {
         isCartModalOpen={isCartModalOpen}
       />
       <Hero />
+      <Services />
       {isCartModalOpen && (
         <CartModal
           setCartCount={setCartCount}
