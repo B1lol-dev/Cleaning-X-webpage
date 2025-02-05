@@ -15,6 +15,7 @@ img {
 @theme {
   --color-x-black: #211f54;
   --color-x-blue: #0075ff;
+  --color-x-dark-blue: #211f54;
   --color-x-gray: #6e7191;
   --color-x-light-gray: #dcddeb;
 }
