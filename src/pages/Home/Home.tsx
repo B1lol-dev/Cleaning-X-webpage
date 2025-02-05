@@ -10,6 +10,7 @@ import { Info } from "./components/Info";
 import { ProServices } from "./components/ProServices";
 import { Sanitization } from "./components/Sanitization";
 import { HouseServices } from "./components/HouseServices";
+import { Difference } from "./components/Difference";
 // import { Container } from "./components/defaults/Container";
 
 export const Home = () => {
@@ -33,6 +34,7 @@ export const Home = () => {
       <ProServices />
       <Sanitization />
       <HouseServices />
+      <Difference />
       {isCartModalOpen && (
         <CartModal
           setCartCount={setCartCount}

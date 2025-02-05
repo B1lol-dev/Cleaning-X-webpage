@@ -22,9 +22,9 @@ export const HouseServices = () => {
             <img src={houseServices_img} alt="House" />
           </div>
           <div>
-            <h2 className="text-x-black max-w-[30rem] font-bold text-5xl max-xl:text-3xl">
+            <h1 className="text-x-black max-w-[30rem] font-bold text-5xl max-xl:text-3xl">
               We cover all areas of your home or office
-            </h2>
+            </h1>
             <p className="text-x-gray text-lg max-w-[496px] mt-5 max-xl:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
