@@ -1,5 +1,6 @@
 // components
 import { Container } from "../../../components/defaults/Container";
+import { ButtonBlue } from "./buttons/ButtonBlue";
 
 // assets
 import icon_call from "../../../assets/icons/icon_call.svg";
@@ -25,9 +26,7 @@ export const Sanitization = () => {
               sollicitudin congue massa mauris lectus.
             </p>
             <div className="flex mt-3 items-center gap-7 max-sm:flex-col-reverse max-sm:items-start max-[350px]:flex-row! max-[350px]:gap-2">
-              <button className="bg-x-blue text-white font-bold px-9 h-[71px] text-base text-nowrap rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-sm:h-[unset] max-sm:py-5 max-[350px]:p-3 max-[350px]:text-lg">
-                Get a free quote
-              </button>
+              <ButtonBlue classes="text-base text-nowrap" />
               <a href="tel:+4145672109" className="flex items-center">
                 <img
                   src={icon_call}

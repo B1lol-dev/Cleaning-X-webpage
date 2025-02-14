@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 // components
 import { Container } from "../../../components/defaults/Container";
+import { ButtonBlue } from "./buttons/ButtonBlue";
 
 // assets
 import houseServices_img from "../assets/houseServices/houseServices_img.png";
@@ -50,12 +51,7 @@ export const HouseServices = () => {
                 );
               })}
             </div>
-            <button
-              type="button"
-              className="bg-x-blue text-white mt-12 font-bold px-9 h-[71px] text-xl rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-sm:h-[unset] max-sm:py-5 max-[350px]:p-3 max-[350px]:text-lg"
-            >
-              Get a free quote
-            </button>
+            <ButtonBlue />
           </div>
         </div>
       </Container>

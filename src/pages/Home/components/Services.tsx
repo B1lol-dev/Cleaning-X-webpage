@@ -2,12 +2,13 @@ import { v4 as uuidv4 } from "uuid";
 
 // components
 import { Container } from "../../../components/defaults/Container";
+import { ServiceCard } from "./cards/ServiceCard";
+import { ButtonBlue } from "./buttons/ButtonBlue";
 
 // assets
 import service_1 from "../assets/services/service_1.svg";
 import service_2 from "../assets/services/service_2.svg";
 import service_3 from "../assets/services/service_3.svg";
-import { ServiceCard } from "./cards/ServiceCard";
 
 export const Services = () => {
   const services = [
@@ -55,12 +56,7 @@ export const Services = () => {
             })}
           </div>
           <div className="flex gap-7 justify-center mt-14 max-lg:flex-col max-lg:items-center">
-            <button
-              type="button"
-              className="text-[1.25rem] font-bold text-white bg-x-blue px-9 py-6 rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"
-            >
-              Get a free quote
-            </button>
+            <ButtonBlue />
             <button
               type="button"
               className="text-[1.25rem] text-x-black border-[#EFF0F6] shadow-[0px_4px_10px_0px_#14142B0A] border-1 bg-x-white px-9 py-6 rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"

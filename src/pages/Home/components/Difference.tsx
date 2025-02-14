@@ -1,9 +1,10 @@
 // components
 import { Container } from "../../../components/defaults/Container";
+import { DifferenceCard } from "./cards/DifferenceCard";
+import { ButtonBlue } from "./buttons/ButtonBlue";
 
 // assets
 import difference_img from "../assets/difference/difference_img.png";
-import { DifferenceCard } from "./cards/DifferenceCard";
 
 export const Difference = () => {
   const differences = [
@@ -45,12 +46,7 @@ export const Difference = () => {
                 <DifferenceCard title={difference.title} num={difference.num} />
               ))}
             </div>
-            <button
-              type="button"
-              className="bg-x-blue text-white mt-12 font-bold px-9 h-[71px] text-xl rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-sm:h-[unset] max-sm:py-5 max-[350px]:p-3 max-[350px]:text-lg"
-            >
-              Get a free quote
-            </button>
+            <ButtonBlue />
           </div>
           <div className="max-w-[686px] w-full">
             <img src={difference_img} alt="Cleaning boy" className="w-full" />
