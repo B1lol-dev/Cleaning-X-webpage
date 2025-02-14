@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Container } from "../../../components/defaults/Container";
 import { ServiceCard } from "./cards/ServiceCard";
 import { ButtonBlue } from "./buttons/ButtonBlue";
+import { ButtonWhite } from "./buttons/ButtonWhite";
 
 // assets
 import service_1 from "../assets/services/service_1.svg";
@@ -56,13 +57,8 @@ export const Services = () => {
             })}
           </div>
           <div className="flex gap-7 justify-center mt-14 max-lg:flex-col max-lg:items-center">
-            <ButtonBlue />
-            <button
-              type="button"
-              className="text-[1.25rem] text-x-black border-[#EFF0F6] shadow-[0px_4px_10px_0px_#14142B0A] border-1 bg-x-white px-9 py-6 rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"
-            >
-              Explore services
-            </button>
+            <ButtonBlue classes="text-[1.25rem] px-9 py-6 max-w-96 h-[80px]" />
+            <ButtonWhite classes="text-[1.25rem] max-w-[226px] w-full max-sm:py-5 max-[350px]:max-w-[163px] max-[350px]:p-3 max-[350px]:text-lg" />
           </div>
         </div>
       </Container>

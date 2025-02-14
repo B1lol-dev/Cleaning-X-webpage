@@ -21,7 +21,7 @@ export const Hero = () => {
               aliquet et nulla magna lacus penatibus.
             </p>
             <div className="flex mt-[40px] items-center gap-7 max-sm:flex-col-reverse max-sm:items-start max-[350px]:flex-row! max-[350px]:gap-2">
-              <ButtonBlue />
+              <ButtonBlue classes="text-xl" />
               <a href="tel:+4145672109" className="flex items-center">
                 <img
                   src={icon_call}

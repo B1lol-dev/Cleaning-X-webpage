@@ -8,6 +8,7 @@ import { ProServiceCard } from "./cards/ProServiceCard";
 import proService_1 from "../assets/proServices/proService_1.svg";
 import proService_2 from "../assets/proServices/proService_2.svg";
 import proService_3 from "../assets/proServices/proService_3.svg";
+import { ButtonWhite } from "./buttons/ButtonWhite";
 
 export const ProServices = () => {
   const proServices = [
@@ -36,12 +37,7 @@ export const ProServices = () => {
             <h1 className="text-x-black font-bold text-5xl max-w-[30rem] max-xl:text-3xl max-md:text-center">
               Take a look at our professional services
             </h1>
-            <button
-              type="button"
-              className="text-[1.25rem] text-x-black border-[#EFF0F6] border-1 bg-x-white px-9 py-6 shadow-[0px_4px_10px_0px_#14142B0A] rounded-[14px] transition hover:-translate-y-0.5 active:scale-95 max-w-96"
-            >
-              Explore services
-            </button>
+            <ButtonWhite />
           </div>
           <div className="flex items-center justify-between gap-7 mt-12 max-xl:flex-col">
             {proServices.map((proService) => (
