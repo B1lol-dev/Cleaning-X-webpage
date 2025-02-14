@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 // components
 import { Container } from "../../../components/defaults/Container";
 import { DifferenceCard } from "./cards/DifferenceCard";
@@ -43,7 +45,11 @@ export const Difference = () => {
             </div>
             <div className="flex gap-9 max-sm:flex-col max-sm:gap-3">
               {differences.map((difference) => (
-                <DifferenceCard title={difference.title} num={difference.num} />
+                <DifferenceCard
+                  title={difference.title}
+                  num={difference.num}
+                  key={uuidv4()}
+                />
               ))}
             </div>
             <ButtonBlue />
