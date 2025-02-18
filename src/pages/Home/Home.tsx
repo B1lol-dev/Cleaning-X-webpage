@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 // components
 import { Header } from "../../components/ui/Header";
+import { Footer } from "../../components/ui/Footer";
 
 import { CartModal } from "../../components/modals/CartModal";
 import { Hero } from "./components/Hero";
@@ -13,7 +14,6 @@ import { HouseServices } from "./components/HouseServices";
 import { Difference } from "./components/Difference";
 import { Blog } from "./components/Blog";
 import { Contact } from "./components/Contact";
-// import { Container } from "./components/defaults/Container";
 
 export const Home = () => {
   const [cartCount, setCartCount] = useState(0);
@@ -39,6 +39,7 @@ export const Home = () => {
       <Difference />
       <Blog />
       <Contact />
+      <Footer />
       {isCartModalOpen && (
         <CartModal
           setCartCount={setCartCount}
